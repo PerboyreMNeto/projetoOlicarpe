@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Anuncie seu imóvel com a Olicarpe e receba orientação para vender ou alugar com tranquilidade.">
+    <title>Anuncie seu imóvel | Olicarpe Imóveis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <a class="brand" href="index.html#inicio" aria-label="Página inicial da imobiliária">
+                <img src="imgs/logo-flat-topo.png" alt="Logo da imobiliária">
+            </a>
+            <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="main-navigation" id="main-navigation" aria-label="Navegação principal">
+                <a href="index.html#inicio">Início</a>
+                <a href="index.html#destaques">Comprar</a>
+                <a href="index.html#destaques">Alugar</a>
+                <details class="services-dropdown">
+                    <summary>Serviços <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></summary>
+                    <div class="services-submenu">
+                        <a href="laudos-mercadologicos.html">Laudos mercadológicos</a>
+                        <a href="vistorias.html">Vistorias</a>
+                        <a href="indices.html">Índices de reajuste</a>
+                        <a href="avaliacao-imoveis.html">Avaliação de imóveis</a>
+                        <a href="intermediacao-locacao.html">Intermediação de locação</a>
+                        <a href="assessoria-compra-venda.html">Assessoria em compra e venda</a>
+                        <a href="documentacao-imobiliaria.html">Documentação imobiliária</a>
+                    </div>
+                </details>
+                <a href="sobre.html">Sobre nós</a>
+                <a href="index.html#contato">Contato</a>
+                <a class="header-announce" href="#cadastro" aria-current="page">Anuncie conosco</a>
+                <a class="header-contact" href="https://areacliente.olicarpeimoveis.com.br/" target="_blank" rel="noopener noreferrer">Área do cliente</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="owner-main">
+        <section class="owner-hero" aria-labelledby="owner-title">
+            <div class="owner-hero-content">
+                <p class="owner-eyebrow">Uma parceria para o seu imóvel</p>
+                <h1 id="owner-title">Seu próximo bom negócio <span>começa com uma conversa.</span></h1>
+                <p>Conte com a experiência da Olicarpe para apresentar seu imóvel e receber orientação durante as etapas de venda ou locação.</p>
+                <a class="owner-hero-link" href="#cadastro">Quero anunciar meu imóvel <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+        </section>
+
+        <section class="owner-benefits" aria-label="Apoio para anunciar seu imóvel">
+            <div class="owner-benefit"><i class="fa-solid fa-magnifying-glass-chart" aria-hidden="true"></i><div><h2>Orientação de mercado</h2><p>Converse com a equipe sobre o perfil e a apresentação do imóvel.</p></div></div>
+            <div class="owner-benefit"><i class="fa-solid fa-camera" aria-hidden="true"></i><div><h2>Divulgação cuidadosa</h2><p>Seu imóvel apresentado com informações claras para encontrar interessados.</p></div></div>
+            <div class="owner-benefit"><i class="fa-solid fa-handshake-angle" aria-hidden="true"></i><div><h2>Acompanhamento próximo</h2><p>Conte com atendimento ao longo da negociação e dos próximos passos.</p></div></div>
+        </section>
+
+        <section class="owner-registration" id="cadastro" aria-labelledby="registration-title">
+            <div class="owner-process">
+                <p class="owner-eyebrow">Como funciona</p>
+                <h2 id="registration-title">Da primeira conversa ao próximo passo</h2>
+                <ol class="owner-steps">
+                    <li><span>01</span><div><h3>Conte sobre o imóvel</h3><p>Informe o tipo, a localização e se deseja vender ou alugar.</p></div></li>
+                    <li><span>02</span><div><h3>Alinhe os detalhes</h3><p>Nossa equipe conversa com você para entender o imóvel e seus objetivos.</p></div></li>
+                    <li><span>03</span><div><h3>Combine a divulgação</h3><p>Com as informações definidas, orientamos os próximos passos para anunciar.</p></div></li>
+                </ol>
+                <p class="owner-process-note"><i class="fa-solid fa-circle-info" aria-hidden="true"></i> O cadastro inicial não substitui a avaliação e a formalização do serviço.</p>
+            </div>
+
+            <form class="owner-form" id="owner-lead-form">
+                <p class="owner-eyebrow">Fale com a nossa equipe</p>
+                <h2>Apresente seu imóvel</h2>
+                <p class="owner-form-intro">Preencha os dados e continue a conversa pelo WhatsApp.</p>
+                <div class="owner-form-grid">
+                    <label class="owner-field" for="owner-name">Seu nome <span>(obrigatório)</span><input id="owner-name" name="name" type="text" autocomplete="name" placeholder="Nome e sobrenome" required></label>
+                    <label class="owner-field" for="owner-phone">Telefone para contato <span>(obrigatório)</span><input id="owner-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="(85) 99999-9999" required></label>
+                    <label class="owner-field" for="owner-purpose">O que deseja fazer? <span>(opcional)</span>
+                        <select id="owner-purpose" name="purpose">
+                            <option value="" selected disabled>Selecione uma opção</option>
+                            <option value="Alugar">Alugar</option>
+                            <option value="Vender">Vender</option>
+                            <option value="Avaliar as possibilidades">Ainda estou avaliando</option>
+                        </select>
+                    </label>
+                    <label class="owner-field" for="owner-type">Tipo de imóvel <span>(opcional)</span>
+                        <select id="owner-type" name="propertyType">
+                            <option value="" selected disabled>Selecione o tipo</option>
+                            <option>Apartamento</option><option>Casa</option><option>Sala comercial</option>
+                            <option>Loja</option><option>Terreno</option><option>Outro</option>
+                        </select>
+                    </label>
+                    <label class="owner-field owner-field-wide" for="owner-location">Bairro ou cidade <span>(opcional)</span><input id="owner-location" name="location" type="text" autocomplete="address-level2" placeholder="Ex.: Meireles, Fortaleza"></label>
+                    <label class="owner-field owner-field-wide" for="owner-message">Detalhes adicionais <span>(opcional)</span><textarea id="owner-message" name="message" rows="3" placeholder="Conte um pouco mais sobre o imóvel"></textarea></label>
+                </div>
+                <button class="owner-submit" type="submit"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Continuar pelo WhatsApp</button>
+                <p class="owner-privacy">Os dados preenchidos serão incluídos na mensagem para a Olicarpe. Você poderá revisar e enviar pelo WhatsApp.</p>
+                <p class="owner-form-status" id="owner-form-status" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a class="footer-brand" href="index.html#inicio"><img src="imgs/logo-flat-topo-branco.png" alt="Olicarpe Imóveis"></a>
+        <div class="footer-contact">
+            <address><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Rua Floriano Peixoto, 1366 - Centro, Fortaleza - CE</address>
+            <a href="tel:+558532311010"><i class="fa-solid fa-phone" aria-hidden="true"></i> Fixo: (85) 3231-1010</a>
+            <a href="https://wa.me/5585997980123" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp: (85) 99798-0123</a>
+        </div>
+        <div class="footer-social" aria-label="Redes sociais">
+            <a href="https://www.instagram.com/" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+            <a href="https://www.youtube.com/" aria-label="YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+            <a href="https://www.tiktok.com/" aria-label="TikTok"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a>
+        </div>
+        <small>&copy; 2026 Olicarpe Imóveis. Todos os direitos reservados.</small>
+    </footer>
+
+    <script src="js/anuncie.js" defer></script>
+</body>
+</html>

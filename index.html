@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Encontre seu próximo imóvel com atendimento próximo e seguro.">
+    <title>Olicarpe Imóveis | Encontre seu próximo imóvel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <a class="brand" href="index.html" aria-label="Página inicial da imobiliária">
+                <img src="imgs/logo-flat-topo.png" alt="Logo da imobiliária">
+            </a>
+
+            <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="main-navigation" id="main-navigation" aria-label="Navegação principal">
+                <a class="nav-current" href="#inicio">Início</a>
+                <a href="#destaques">Comprar</a>
+                <a href="#destaques">Alugar</a>
+                <details class="services-dropdown">
+                    <summary>Serviços <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></summary>
+                    <div class="services-submenu">
+                        <a href="laudos-mercadologicos.html">Laudos mercadológicos</a>
+                        <a href="vistorias.html">Vistorias</a>
+                        <a href="indices.html">Índices de reajuste</a>
+                        <a href="avaliacao-imoveis.html">Avaliação de imóveis</a>
+                        <a href="intermediacao-locacao.html">Intermediação de locação</a>
+                        <a href="assessoria-compra-venda.html">Assessoria em compra e venda</a>
+                        <a href="documentacao-imobiliaria.html">Documentação imobiliária</a>
+                    </div>
+                </details>
+                <a href="sobre.html">Sobre nós</a>
+                <a href="#contato">Contato</a>
+                <a class="header-announce" href="anuncie.html">Anuncie conosco</a>
+                <a class="header-contact" href="https://areacliente.olicarpeimoveis.com.br/" target="_blank" rel="noopener noreferrer">Área do cliente</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro" id="inicio" aria-labelledby="intro-title">
+            <div class="hero-shade"></div>
+            <div class="intro-content">
+                <p class="eyebrow">Mais que imóveis,</p>
+                <h1 id="intro-title">Realizamos<br><span>sonhos.</span></h1>
+                <p class="intro-text">A Olicarpe Imóveis é a sua parceira ideal para encontrar o imóvel perfeito, seja para morar, investir ou empreender. Tradição, confiança e um atendimento personalizado em todas as etapas.</p>
+                <div class="hero-services" aria-label="Nossos serviços">
+                    <a href="#destaques"><i class="fa-solid fa-house" aria-hidden="true"></i><span>Compra e venda<br>de imóveis</span></a>
+                    <a href="#destaques"><i class="fa-solid fa-key" aria-hidden="true"></i><span>Locação de imóveis</span></a>
+                    <a href="laudos-mercadologicos.html"><i class="fa-solid fa-house-circle-check" aria-hidden="true"></i><span>Laudos mercadológicos</span></a>
+                    <a href="vistorias.html"><i class="fa-regular fa-clipboard" aria-hidden="true"></i><span>Vistorias</span></a>
+                    <a href="indices.html"><i class="fa-solid fa-chart-line" aria-hidden="true"></i><span>Índices de reajuste</span></a>
+                </div>
+                <div class="search-panel">
+                    <div class="search-tabs" role="tablist" aria-label="Finalidade do imóvel">
+                        <button class="search-tab is-active" type="button" role="tab" aria-selected="true" data-operation="2">Comprar</button>
+                        <button class="search-tab" type="button" role="tab" aria-selected="false" data-operation="1">Alugar</button>
+                    </div>
+                    <form class="property-search" id="property-search" action="https://www.olicarpeimoveis.com.br/buscaRapida" method="get" target="_blank">
+                        <input type="hidden" name="limit" value="12">
+                        <input type="hidden" name="offset" value="0">
+                        <input type="hidden" name="opcao" id="search-operation" value="2">
+                        <input type="hidden" name="codigo" value="">
+                        <input type="hidden" name="dormitorios" value="0">
+                        <input type="hidden" name="suites" value="0">
+                        <input type="hidden" name="vagas" value="0">
+                        <input type="hidden" name="valorInicial" value="0">
+                        <input type="hidden" name="area" value="0">
+                        <div class="search-fields">
+                            <label class="search-field"><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span class="visually-hidden">Bairro</span><input type="text" id="search-neighborhood" placeholder="Bairro, cidade ou região"><input type="hidden" name="bairro" id="search-neighborhood-value" value="0"></label>
+                            <label class="search-field"><i class="fa-solid fa-house" aria-hidden="true"></i><span class="visually-hidden">Tipo de imóvel</span><select name="tipo"><option value="0">Tipo de imóvel</option><option value="2">Apartamento</option><option value="1">Casa</option><option value="16">Sala</option><option value="18">Loja</option><option value="3">Galpão</option><option value="7">Terreno</option></select></label>
+                            <label class="search-field"><i class="fa-solid fa-circle-dollar-to-slot" aria-hidden="true"></i><span class="visually-hidden">Faixa de preço</span><select name="valorFinal"><option value="0">Faixa de preço</option><option value="200000">Até R$ 200 mil</option><option value="500000">Até R$ 500 mil</option><option value="1000000">Até R$ 1 milhão</option></select></label>
+                            <button class="search-button" type="submit"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i> Buscar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured section-wrap" id="destaques" aria-labelledby="featured-title">
+            <div class="section-heading"><div><h2 id="featured-title">Imóveis em destaque</h2><p>Selecionamos os melhores imóveis para você, com as melhores condições e em localização privilegiada.</p></div><a class="text-link" href="https://www.olicarpeimoveis.com.br/buscaRapida?limit=12&amp;offset=0&amp;opcao=2&amp;codigo=&amp;tipo=0&amp;cidade=0&amp;bairro=0&amp;dormitorios=0&amp;suites=0&amp;vagas=0&amp;valorInicial=0&amp;valorFinal=0&amp;area=0" target="_blank" rel="noopener noreferrer">Ver todos os imóveis <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
+            <div class="property-grid">
+                <a class="property-card" href="https://www.olicarpeimoveis.com.br/buscaRapida" target="_blank" rel="noopener noreferrer"><div class="property-photo"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&amp;fit=crop&amp;w=720&amp;q=82" alt="Casa contemporânea com jardim e piscina" loading="lazy"><span class="property-tag">À venda</span><span class="favorite" aria-label="Favorito"><i class="fa-regular fa-heart" aria-hidden="true"></i></span></div><div class="property-info"><h3>Casa em condomínio</h3><p><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Eusébio - CE</p><div class="property-features"><span><i class="fa-solid fa-bed" aria-hidden="true"></i> 4</span><span><i class="fa-solid fa-bath" aria-hidden="true"></i> 5</span><span><i class="fa-solid fa-car" aria-hidden="true"></i> 3</span><span>320 m²</span></div><strong>R$ 2.450.000</strong></div></a>
+                <a class="property-card" href="https://www.olicarpeimoveis.com.br/buscaRapida" target="_blank" rel="noopener noreferrer"><div class="property-photo"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&amp;fit=crop&amp;w=720&amp;q=82" alt="Sala ampla de apartamento com varanda" loading="lazy"><span class="property-tag tag-rent">Para alugar</span><span class="favorite" aria-label="Favorito"><i class="fa-regular fa-heart" aria-hidden="true"></i></span></div><div class="property-info"><h3>Apartamento</h3><p><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Meireles - Fortaleza - CE</p><div class="property-features"><span><i class="fa-solid fa-bed" aria-hidden="true"></i> 3</span><span><i class="fa-solid fa-bath" aria-hidden="true"></i> 2</span><span><i class="fa-solid fa-car" aria-hidden="true"></i> 2</span><span>120 m²</span></div><strong>R$ 4.500/mês</strong></div></a>
+                <a class="property-card" href="https://www.olicarpeimoveis.com.br/buscaRapida" target="_blank" rel="noopener noreferrer"><div class="property-photo"><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&amp;fit=crop&amp;w=720&amp;q=82" alt="Casa moderna com piscina e varanda" loading="lazy"><span class="property-tag">À venda</span><span class="favorite" aria-label="Favorito"><i class="fa-regular fa-heart" aria-hidden="true"></i></span></div><div class="property-info"><h3>Casa</h3><p><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Aquiraz - CE</p><div class="property-features"><span><i class="fa-solid fa-bed" aria-hidden="true"></i> 5</span><span><i class="fa-solid fa-bath" aria-hidden="true"></i> 6</span><span><i class="fa-solid fa-car" aria-hidden="true"></i> 4</span><span>490 m²</span></div><strong>R$ 3.200.000</strong></div></a>
+                <a class="property-card" href="https://www.olicarpeimoveis.com.br/buscaRapida" target="_blank" rel="noopener noreferrer"><div class="property-photo"><img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&amp;fit=crop&amp;w=720&amp;q=82" alt="Edifício residencial contemporâneo" loading="lazy"><span class="property-tag tag-launch">Lançamento</span><span class="favorite" aria-label="Favorito"><i class="fa-regular fa-heart" aria-hidden="true"></i></span></div><div class="property-info"><h3>Apartamento</h3><p><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Aldeota - Fortaleza - CE</p><div class="property-features"><span><i class="fa-solid fa-bed" aria-hidden="true"></i> 3</span><span><i class="fa-solid fa-bath" aria-hidden="true"></i> 2</span><span><i class="fa-solid fa-car" aria-hidden="true"></i> 2</span><span>85 m²</span></div><strong>R$ 780.000</strong></div></a>
+            </div>
+        </section>
+
+        <section class="about" id="quem-somos" aria-labelledby="about-title"><div class="about-image"><div class="story-link"><a href="sobre.html" aria-label="Conheça nossa história"><i class="fa-solid fa-play" aria-hidden="true"></i></a><div><strong>Conheça<br> a nossa história</strong><span>Tradição desde 1991</span></div></div></div><div class="about-copy"><p class="eyebrow">Nossa história</p><h2 id="about-title">Quem somos</h2><p>Fundada em 1991, a Olicarpe Imóveis nasceu da união de três sócios, e ao longo dos anos se consolidou no mercado imobiliário de Fortaleza/CE. Hoje, seguimos com o legado de tradição, aliada a uma nova visão, oferecendo um atendimento próximo, honesto e eficiente.</p><p>Nosso maior patrimônio são as pessoas e clientes que confiam em nosso trabalho.</p><a class="outline-link" href="sobre.html">Saiba mais <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div></section>
+
+        <section class="benefits" id="servicos" aria-label="Nossos diferenciais"><div><i class="fa-regular fa-user" aria-hidden="true"></i><p><strong>Atendimento<br>personalizado</strong><span>Cada cliente é único e merece um atendimento exclusivo.</span></p></div><div><i class="fa-regular fa-handshake" aria-hidden="true"></i><p><strong>Bons negócios</strong><span>Condições justas e as melhores oportunidades do mercado.</span></p></div><div><i class="fa-solid fa-shield-halved" aria-hidden="true"></i><p><strong>Acompanhamento<br>completo</strong><span>Do primeiro contato à entrega das chaves.</span></p></div><div><i class="fa-solid fa-scale-balanced" aria-hidden="true"></i><p><strong>Honestidade</strong><span>Nossa conduta é pautada na ética e na transparência.</span></p></div></section>
+
+        <section class="news section-wrap" id="novidades" aria-labelledby="news-title"><div class="news-list"><div class="section-heading"><div><h2 id="news-title">Dicas e novidades</h2><p>Acompanhe nosso blog e fique por dentro das tendências do mercado imobiliário, dicas e muito mais.</p></div><a class="text-link" href="#novidades">Acesse o blog <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div><div class="news-grid"><a class="news-card" href="#novidades"><img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Casa com jardim em dia ensolarado" loading="lazy"><span>Mercado imobiliário</span><h3>Tendências do mercado imobiliário para 2025</h3><small>Leia mais <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></small></a><a class="news-card" href="#novidades"><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Sala de estar contemporânea" loading="lazy"><span>Casa e decoração</span><h3>Como escolher o melhor bairro para morar</h3><small>Leia mais <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></small></a><a class="news-card" href="#novidades"><img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Fachada de condomínio residencial" loading="lazy"><span>Investimentos</span><h3>Imóveis como investimento: por que vale a pena?</h3><small>Leia mais <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></small></a></div></div><aside class="contact-callout" id="contato"><span>Vamos encontrar<br>o seu próximo imóvel?</span><h2>Fale com um especialista.</h2><p>Nossa equipe está pronta para te atender e tirar todas as suas dúvidas.</p><a href="https://wa.me/5585997980123" target="_blank" rel="noopener noreferrer">Entrar em contato <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></aside></section>
+    </main>
+
+    <footer class="site-footer"><a class="footer-brand" href="#inicio"><img src="imgs/logo-flat-topo-branco.png" alt="Olicarpe Imóveis"></a><div class="footer-contact"><address><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Rua Floriano Peixoto, 1366 - Centro, Fortaleza - CE</address><a href="tel:+558532311010"><i class="fa-solid fa-phone" aria-hidden="true"></i> Fixo: (85) 3231-1010</a><a href="https://wa.me/5585997980123" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp: (85) 99798-0123</a></div><div class="footer-social" aria-label="Redes sociais"><a href="https://www.instagram.com/" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a><a href="https://www.facebook.com/" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a><a href="https://www.linkedin.com/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a><a href="https://www.youtube.com/" aria-label="YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a><a href="https://www.tiktok.com/" aria-label="TikTok"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a></div><small>&copy; 2026 Olicarpe Imóveis. Todos os direitos reservados.</small></footer>
+
+    <script src="js/script.js" defer></script>
+</body>
+</html>
