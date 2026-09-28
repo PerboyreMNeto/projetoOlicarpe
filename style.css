@@ -1376,6 +1376,21 @@ body {
 		padding: 12px;
 	}
 
+	.main-navigation.is-open > a,
+	.main-navigation.is-open > .services-dropdown > summary {
+		border-radius: 4px;
+		color: #fff;
+		background: var(--orange);
+	}
+
+	.main-navigation.is-open > a:hover,
+	.main-navigation.is-open > a:focus-visible,
+	.main-navigation.is-open > .services-dropdown > summary:hover,
+	.main-navigation.is-open > .services-dropdown > summary:focus-visible {
+		color: #fff;
+		background: var(--orange-dark);
+	}
+
 	.main-navigation .nav-current::after {
 		display: none;
 	}
